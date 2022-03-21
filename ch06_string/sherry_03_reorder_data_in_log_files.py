@@ -8,7 +8,7 @@ import re
 import sys
 import math
 import bisect
-from typing import Deque
+# from typing import Deque
 
 
 class Solution:
@@ -23,7 +23,7 @@ class Solution:
         letters, digits = [], []
 
         for log in logs:
-            if log.split()[l].isdigit(): 
+            if log.split()[1].isdigit(): 
                 digits.append(log)
             else: 
                 letters.append(log)

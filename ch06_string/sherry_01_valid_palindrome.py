@@ -58,7 +58,7 @@ class Solution:
                 Deque.append(char.lower())
             
         while len(Deque) > 1:
-            if Deque.pop(0) != Deque.pop():
+            if Deque.pop() != Deque.pop():
                 return False 
 
         return True
