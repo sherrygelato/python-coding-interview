@@ -8,7 +8,7 @@ import re
 import sys
 import math
 import bisect
-from typing import Deque
+# from typing import Deque
 
 
 class Solution:
@@ -16,7 +16,7 @@ class Solution:
 
     # 예제
     paragraph = "Bob hit a ball, the hit BALL flew far after it was hit." 
-    banned = ["htt"]
+    banned = ["hit"]
     # “ball"
 
     # 풀이 1 : 리스트 컴프리헨션, Counter 객체 사용
