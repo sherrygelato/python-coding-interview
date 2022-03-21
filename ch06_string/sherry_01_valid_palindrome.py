@@ -19,7 +19,6 @@ class Solution:
 
     # 풀이 1 리스트로 변환
     def isPaltndrome1(s):
-
         # 문자열을 입력받아 팰린드롬 여부 판별
         #   - 대소문자 여부 구분 안함
         #   - 영문자, 숫자만을 대상으로 함
@@ -58,7 +57,7 @@ class Solution:
                 Deque.append(char.lower())
             
         while len(Deque) > 1:
-            if Deque.pop() != Deque.pop():
+            if Deque.pop(0) != Deque.pop():
                 return False 
 
         return True
