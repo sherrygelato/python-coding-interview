@@ -1,3 +1,0 @@
-# python-coding-interview
-
-# test
