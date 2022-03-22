@@ -37,12 +37,12 @@ from typing import *
 | [O]  | [가장 흔한 단어](https://leetcode.com/problems/most-common-word/) | ★      | 6장. 문자열 조작              |
 | [O]  | [그룹 애너그램](https://leetcode.com/problems/group-anagrams/) | ★★     | 6장. 문자열 조작              |
 | [O]  | [가장 긴 팰린드롬 부분 문자열](https://leetcode.com/problems/longest-palindromic-substring/) | ★★     | 6장. 문자열 조작              |
-| [ ]  | [두 수의 합](https://leetcode.com/problems/two-sum/)         | ★      | 7장. 배열                     |
-| [ ]  | [빗물 트래핑](https://leetcode.com/problems/trapping-rain-water/) | ★★★    | 7장. 배열                     |
-| [ ]  | [세 수의 합](https://leetcode.com/problems/3sum/)            | ★★     | 7장. 배열                     |
-| [ ]  | [배열 파티션 I](https://leetcode.com/problems/array-partition-i/) | ★      | 7장. 배열                     |
-| [ ]  | [자신을 제외한 배열의 곱](https://leetcode.com/problems/product-of-array-except-self/) | ★★     | 7장. 배열                     |
-| [ ]  | [주식을 사고팔기 가장 좋은 시점](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | ★      | 7장. 배열                     |
+| [O]  | [두 수의 합](https://leetcode.com/problems/two-sum/)         | ★      | 7장. 배열                     |
+| [O]  | [빗물 트래핑](https://leetcode.com/problems/trapping-rain-water/) | ★★★    | 7장. 배열                     |
+| [O]  | [세 수의 합](https://leetcode.com/problems/3sum/)            | ★★     | 7장. 배열                     |
+| [O]  | [배열 파티션 I](https://leetcode.com/problems/array-partition-i/) | ★      | 7장. 배열                     |
+| [O]  | [자신을 제외한 배열의 곱](https://leetcode.com/problems/product-of-array-except-self/) | ★★     | 7장. 배열                     |
+| [O]  | [주식을 사고팔기 가장 좋은 시점](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | ★      | 7장. 배열                     |
 | [ ]  | [팰린드롬 연결 리스트](https://leetcode.com/problems/palindrome-linked-list/) | ★      | 8장. 연결 리스트              |
 | [ ]  | [두 정렬 리스트의 병합](https://leetcode.com/problems/merge-two-sorted-lists/) | ★      | 8장. 연결 리스트              |
 | [ ]  | [역순 연결 리스트](https://leetcode.com/problems/reverse-linked-list/) | ★      | 8장. 연결 리스트              |
