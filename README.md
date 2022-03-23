@@ -43,13 +43,13 @@ from typing import *
 | [O]  | [배열 파티션 I](https://leetcode.com/problems/array-partition-i/) | ★      | 7장. 배열                     |
 | [O]  | [자신을 제외한 배열의 곱](https://leetcode.com/problems/product-of-array-except-self/) | ★★     | 7장. 배열                     |
 | [O]  | [주식을 사고팔기 가장 좋은 시점](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | ★      | 7장. 배열                     |
-| [ ]  | [팰린드롬 연결 리스트](https://leetcode.com/problems/palindrome-linked-list/) | ★      | 8장. 연결 리스트              |
-| [ ]  | [두 정렬 리스트의 병합](https://leetcode.com/problems/merge-two-sorted-lists/) | ★      | 8장. 연결 리스트              |
-| [ ]  | [역순 연결 리스트](https://leetcode.com/problems/reverse-linked-list/) | ★      | 8장. 연결 리스트              |
-| [ ]  | [두 수의 덧셈](https://leetcode.com/problems/add-two-numbers/) | ★★     | 8장. 연결 리스트              |
-| [ ]  | [페어의 노드 스왑](https://leetcode.com/problems/swap-nodes-in-pairs/) | ★★     | 8장. 연결 리스트              |
-| [ ]  | [홀짝 연결 리스트](https://leetcode.com/problems/odd-even-linked-list/) | ★★     | 8장. 연결 리스트              |
-| [ ]  | [역순 연결 리스트 II](https://leetcode.com/problems/reverse-linked-list-ii/) | ★★     | 8장. 연결 리스트              |
+| [O]  | [팰린드롬 연결 리스트](https://leetcode.com/problems/palindrome-linked-list/) | ★      | 8장. 연결 리스트              |
+| [O]  | [두 정렬 리스트의 병합](https://leetcode.com/problems/merge-two-sorted-lists/) | ★      | 8장. 연결 리스트              |
+| [O]  | [역순 연결 리스트](https://leetcode.com/problems/reverse-linked-list/) | ★      | 8장. 연결 리스트              |
+| [O]  | [두 수의 덧셈](https://leetcode.com/problems/add-two-numbers/) | ★★     | 8장. 연결 리스트              |
+| [O]  | [페어의 노드 스왑](https://leetcode.com/problems/swap-nodes-in-pairs/) | ★★     | 8장. 연결 리스트              |
+| [O]  | [홀짝 연결 리스트](https://leetcode.com/problems/odd-even-linked-list/) | ★★     | 8장. 연결 리스트              |
+| [O]  | [역순 연결 리스트 II](https://leetcode.com/problems/reverse-linked-list-ii/) | ★★     | 8장. 연결 리스트              |
 | [ ]  | [유효한 괄호](https://leetcode.com/problems/valid-parentheses/) | ★      | 9장. 스택, 큐                 |
 | [ ]  | [중복 문자 제거](https://leetcode.com/problems/remove-duplicate-letters/) | ★★★    | 9장. 스택, 큐                 |
 | [ ]  | [일일 온도](https://leetcode.com/problems/daily-temperatures/) | ★★     | 9장. 스택, 큐                 |

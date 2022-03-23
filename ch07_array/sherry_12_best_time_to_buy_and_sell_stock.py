@@ -1,3 +1,4 @@
+# Python
 # -*- coding:UTF-8 -*-
 
 import collections
@@ -9,7 +10,6 @@ import sys
 import math
 import bisect
 from typing import Deque
-
 
 # 문제 12 주식을 사고팔기 가장 좋은 시점 : 한 번의 거래로 낼 수 있는 최대 이익을 산출하라.
 
