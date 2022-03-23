@@ -26,7 +26,7 @@ print(maxProfit(prices))
 import sys
 
 
-def maxProfit(prices):
+def maxProfit2(prices):
     profit = 0
     min_price = sys.maxsize
     
@@ -36,14 +36,14 @@ def maxProfit(prices):
 
     return profit        
 
-print(maxProfit(prices))
+print(maxProfit2(prices))
 
 
 # --------------------------------------------------
 import sys
 
 
-def maxProfit(prices):
+def maxProfit3(prices):
     profit = -sys.maxsize
     min_price = sys.maxsize
     
@@ -53,4 +53,4 @@ def maxProfit(prices):
 
     return profit        
 
-print(maxProfit(prices))
+print(maxProfit3(prices))

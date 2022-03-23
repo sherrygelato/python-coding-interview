@@ -39,7 +39,7 @@ print(trap(height))
 
 
 # --------------------------------------------------
-def trap(height):
+def trap2(height):
     stack = []
     volume = 0
 
@@ -64,7 +64,7 @@ def trap(height):
     return volume
 
 
-print(trap(height))
+print(trap2(height))
 
 
 # --------------------------------------------------
