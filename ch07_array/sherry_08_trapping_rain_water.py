@@ -1,3 +1,4 @@
+# Python
 # -*- coding:UTF-8 -*-
 
 import collections
@@ -10,7 +11,7 @@ import math
 import bisect
 from typing import Deque
 
-# 꼭 다시 보고 이해하기!
+# TODO: 다시 보면서 이해하기!
 
 # 문제 08 빗물 트래핑 : 높이를 입력받아 비 온 후 얼마나 많은 물이 쌓일 수 있는지 계산하라.
 

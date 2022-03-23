@@ -1,3 +1,4 @@
+# Python
 # -*- coding:UTF-8 -*-
 
 import collections
@@ -49,14 +50,14 @@ def isPaltndrome2(s):
     # Deque를 명시적으로 선언하면 속도를 더 높일 수 있음
 
     # 자료형 데크로 선언
-    Deque = collections.deque()
+    strs: Deque = collections.deque()
 
     for char in s:
         if char.isalnum():
-            Deque.append(char.lower())
+            strs.append(char.lower())
         
-    while len(Deque) > 1:
-        if Deque.pop(0) != Deque.pop():
+    while len(strs) > 1:
+        if strs.popleft() != strs.pop():
             return False 
 
     return True
