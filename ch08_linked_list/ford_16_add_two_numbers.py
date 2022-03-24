@@ -2,7 +2,6 @@
 """
 CH08. 16_Add_Two_Numbers.py
 """
-
 class ListNode:
     def __init__(self, val, next = None):
         self.val = val
@@ -30,6 +29,8 @@ node21.next = node22
 # 342 + 465 = 807 
 
 # --------------------------------------------------
+import functools
+
 def reverseList(head):
     node, prev = head, None
     
@@ -62,7 +63,10 @@ def addTwoNumbers(l1, l2):
     a = toList(reverseList(l1))
     b = toList(reverseList(l2))
     
-    resultStr = int(''.join(str(e) for e in a)) + int(''.join(str(e) for e in b))
+    """숫자형 합치기"""
+    # resultStr = int(''.join(str(e) for e in a)) + int(''.join(str(e) for e in b))
+    # resultStr = int(''.join(map(str, a))) + int(''.join(map(str, b)))
+    resultStr = functools.reduce(lambda x, y: 10*x + y, a) + functools.reduce(lambda x, y: 10*x + y, b)
     
     return toReversedLinkedList(str(resultStr))
 
@@ -75,3 +79,29 @@ while result:
 
 
 # --------------------------------------------------
+def addTwoNumbers2(l1, l2):
+    root = head = ListNode(0)
+    
+    carry = 0
+    while l1 or l2 or carry:
+        sum = 0
+        
+        if l1:
+            sum += l1.val
+            l1 = l1.next
+        if l2:
+            sum += l2.val
+            l2 = l2.next
+            
+        carry, val = divmod(sum + carry, 10)
+        head.next = ListNode(val)
+        head = head.next
+    
+    return root.next
+
+
+result = addTwoNumbers2(node1, node2)
+
+while result:
+    print(result.val, end = ' ')
+    result = result.next
