@@ -31,7 +31,7 @@ print(isPalindromeWithList(strC))  # True
 from collections import deque
 
 
-def isPalindromeWithDeque(s):
+def isPalindromeWithDeque2(s):
     """String -> deque로 한 문자열씩 비교"""
     strs: deque = deque()
 
@@ -46,16 +46,16 @@ def isPalindromeWithDeque(s):
     return True
 
 
-print(isPalindromeWithDeque(strA))  # True
-print(isPalindromeWithDeque(strB))  # False
-print(isPalindromeWithDeque(strC))  # True
+print(isPalindromeWithDeque2(strA))  # True
+print(isPalindromeWithDeque2(strB))  # False
+print(isPalindromeWithDeque2(strC))  # True
 
 
 # --------------------------------------------------
 import re
 
 
-def isPalindromeWithSlicing(s):
+def isPalindromeWithSlicing3(s):
     """전체 소문자로 변경/특수문자 제거 후 슬라이싱을 통한 비교"""
     s = s.lower()
     s = re.sub('[^a-z0-9]', '', s)
@@ -63,6 +63,6 @@ def isPalindromeWithSlicing(s):
     return s == s[::-1]
 
 
-print(isPalindromeWithSlicing(strA))  # True
-print(isPalindromeWithSlicing(strB))  # False
-print(isPalindromeWithSlicing(strC))  # True
+print(isPalindromeWithSlicing3(strA))  # True
+print(isPalindromeWithSlicing3(strB))  # False
+print(isPalindromeWithSlicing3(strC))  # True

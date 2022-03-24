@@ -22,11 +22,11 @@ print(reverseStringWithTwoPointer(strB))  # ['h', 'a', 'n', 'n', 'a', 'h']
 
 
 # --------------------------------------------------
-def reverseStringWithPython(s):
+def reverseStringWithPython2(s):
     s.reverse()
 
     return s
 
 
-print(reverseStringWithPython(strA))  # ['o', 'l', 'l', 'e', 'h']
-print(reverseStringWithPython(strB))  # ['h', 'a', 'n', 'n', 'a', 'h']
+print(reverseStringWithPython2(strA))  # ['o', 'l', 'l', 'e', 'h']
+print(reverseStringWithPython2(strB))  # ['h', 'a', 'n', 'n', 'a', 'h']

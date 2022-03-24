@@ -27,7 +27,7 @@ print(arrayPairSum(nums))
 
 
 # --------------------------------------------------
-def arrayPairSum(nums):
+def arrayPairSum2(nums):
     sum = 0
     nums.sort()
     
@@ -38,15 +38,15 @@ def arrayPairSum(nums):
     return sum
 
 
-print(arrayPairSum(nums))
+print(arrayPairSum2(nums))
 
 
 # --------------------------------------------------
-def arrayPairSum(nums):
+def arrayPairSum3(nums):
     return sum(sorted(nums)[::2])
 
 
-print(arrayPairSum(nums))
+print(arrayPairSum3(nums))
 
 
 # --------------------------------------------------

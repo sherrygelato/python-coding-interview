@@ -21,7 +21,7 @@ print(twoSum(nums, target))
 
 
 # --------------------------------------------------
-def twoSum(nums, target):
+def twoSum2(nums, target):
     """2. in을 이용한 탐색"""
     for i, n in enumerate(nums):
         complement = target - n
@@ -30,11 +30,11 @@ def twoSum(nums, target):
             return [nums.index(n), nums[i+1:].index(complement) + (i+1)]
 
 
-print(twoSum(nums, target))
+print(twoSum2(nums, target))
 
 
 # --------------------------------------------------
-def twoSum(nums, target):
+def twoSum3(nums, target):
     """3. target-num을 dictionary를 활용해 확인"""
     nums_map = {}
     for i, num in enumerate(nums):
@@ -45,11 +45,11 @@ def twoSum(nums, target):
             return [i, nums_map[target - num]]
 
 
-print(twoSum(nums, target))
+print(twoSum3(nums, target))
 
 
 # --------------------------------------------------
-def twoSum(nums, target):
+def twoSum4(nums, target):
     """4. 3을 좀 더 간단하게 축약, 성능상 개선은 미미함."""
     nums_map = {}
     for i, num in enumerate(nums):
@@ -58,11 +58,11 @@ def twoSum(nums, target):
         nums_map[num] = i
 
 
-print(twoSum(nums, target))
+print(twoSum4(nums, target))
 
 
 # --------------------------------------------------
-def twoSum(nums, target):
+def twoSum5(nums, target):
     """이 문제는 nums가 정렬되었다는 보장이 없으므로, 투포인터로 풀 수 없음!"""
     left, right = 0, len(nums) - 1
     while not left == right:
@@ -74,4 +74,4 @@ def twoSum(nums, target):
             return [left, right]
 
 
-print(twoSum(nums, target))
+print(twoSum5(nums, target))

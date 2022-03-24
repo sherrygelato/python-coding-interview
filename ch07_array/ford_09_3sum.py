@@ -31,7 +31,7 @@ print(threeSum(nums))
 
 
 # --------------------------------------------------
-def threeSum(nums):
+def threeSum2(nums):
     results = []
     nums.sort()
     
@@ -55,3 +55,6 @@ def threeSum(nums):
                 left += 1
                 right -= 1
     return results
+
+
+print(threeSum2(nums))
