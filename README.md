@@ -50,13 +50,13 @@ from typing import *
 | [O]  | [페어의 노드 스왑](https://leetcode.com/problems/swap-nodes-in-pairs/) | ★★     | 8장. 연결 리스트              |
 | [O]  | [홀짝 연결 리스트](https://leetcode.com/problems/odd-even-linked-list/) | ★★     | 8장. 연결 리스트              |
 | [O]  | [역순 연결 리스트 II](https://leetcode.com/problems/reverse-linked-list-ii/) | ★★     | 8장. 연결 리스트              |
-| [ ]  | [유효한 괄호](https://leetcode.com/problems/valid-parentheses/) | ★      | 9장. 스택, 큐                 |
-| [ ]  | [중복 문자 제거](https://leetcode.com/problems/remove-duplicate-letters/) | ★★★    | 9장. 스택, 큐                 |
-| [ ]  | [일일 온도](https://leetcode.com/problems/daily-temperatures/) | ★★     | 9장. 스택, 큐                 |
-| [ ]  | [큐를 이용한 스택 구현](https://leetcode.com/problems/implement-stack-using-queues/) | ★      | 9장. 스택, 큐                 |
-| [ ]  | [스택을 이용한 큐 구현](https://leetcode.com/problems/implement-queue-using-stacks/) | ★      | 9장. 스택, 큐                 |
-| [ ]  | [원형 큐 디자인](https://leetcode.com/problems/design-circular-queue/) | ★★     | 9장. 스택, 큐                 |
-| [ ]  | [원형 데크 디자인](https://leetcode.com/problems/design-circular-deque/) | ★★     | 10장. 데크, 우선 순위 큐      |
+| [O]  | [유효한 괄호](https://leetcode.com/problems/valid-parentheses/) | ★      | 9장. 스택, 큐                 |
+| [O]  | [중복 문자 제거](https://leetcode.com/problems/remove-duplicate-letters/) | ★★★    | 9장. 스택, 큐                 |
+| [O]  | [일일 온도](https://leetcode.com/problems/daily-temperatures/) | ★★     | 9장. 스택, 큐                 |
+| [O]  | [큐를 이용한 스택 구현](https://leetcode.com/problems/implement-stack-using-queues/) | ★      | 9장. 스택, 큐                 |
+| [O]  | [스택을 이용한 큐 구현](https://leetcode.com/problems/implement-queue-using-stacks/) | ★      | 9장. 스택, 큐                 |
+| [O]  | [원형 큐 디자인](https://leetcode.com/problems/design-circular-queue/) | ★★     | 9장. 스택, 큐                 |
+| [O]  | [원형 데크 디자인](https://leetcode.com/problems/design-circular-deque/) | ★★     | 10장. 데크, 우선 순위 큐      |
 | [ ]  | [k개 정렬 리스트 병합](https://leetcode.com/problems/merge-k-sorted-lists/) | ★      | 10장. 데크, 우선 순위 큐      |
 | [ ]  | [해시맵 디자인](https://leetcode.com/problems/design-hashmap/) | ★      | 11장. 해시 테이블             |
 | [ ]  | [보석과 돌](https://leetcode.com/problems/jewels-and-stones/) | ★      | 11장. 해시 테이블             |
