@@ -57,7 +57,7 @@ from typing import *
 | [O]  | [스택을 이용한 큐 구현](https://leetcode.com/problems/implement-queue-using-stacks/) | ★      | 9장. 스택, 큐                 |
 | [O]  | [원형 큐 디자인](https://leetcode.com/problems/design-circular-queue/) | ★★     | 9장. 스택, 큐                 |
 | [O]  | [원형 데크 디자인](https://leetcode.com/problems/design-circular-deque/) | ★★     | 10장. 데크, 우선 순위 큐      |
-| [ ]  | [k개 정렬 리스트 병합](https://leetcode.com/problems/merge-k-sorted-lists/) | ★      | 10장. 데크, 우선 순위 큐      |
+| [O]  | [k개 정렬 리스트 병합](https://leetcode.com/problems/merge-k-sorted-lists/) | ★      | 10장. 데크, 우선 순위 큐      |
 | [ ]  | [해시맵 디자인](https://leetcode.com/problems/design-hashmap/) | ★      | 11장. 해시 테이블             |
 | [ ]  | [보석과 돌](https://leetcode.com/problems/jewels-and-stones/) | ★      | 11장. 해시 테이블             |
 | [ ]  | [중복 문자 없는 가장 긴 부분 문자열](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | ★★     | 11장. 해시 테이블             |
