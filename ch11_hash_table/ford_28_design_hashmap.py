@@ -1,5 +1,5 @@
 """
-CH10. 28_Design_HashMap.py
+CH11. 28_Design_HashMap.py
 """
 import collections
 import heapq
