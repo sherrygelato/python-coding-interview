@@ -1,5 +1,5 @@
 """
-CH14. 43_Diameter of Binary Tree.py
+CH14. 46_Merge_Two_Binary_Trees.py
 """
 import collections
 import heapq
@@ -15,7 +15,8 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-    
+
+
 def toTree(list):
     size = len(list)
     idx = 1
@@ -24,12 +25,11 @@ def toTree(list):
         return None
     
     def recursive(i):
-        if i > size or list[i-1] == None:
+        if i > size or list[i-1] is None:
             return None
         node = TreeNode(list[i-1])
-        node.left = recursive(2*i)
-        node.right = recursive(2*i+1)
-    
+        node.left = recursive(i*2)
+        node.right = recursive(i*2+1)
         return node
     return recursive(idx)
 
@@ -37,7 +37,7 @@ def toTree(list):
 def printTree(root):
     if root is None:
         print('Tree is Empty')
-    
+        
     q = collections.deque([root])
     
     while q:
@@ -52,29 +52,23 @@ def printTree(root):
 
 
 # 입력
-lst = [1,2,3,4,5,None,None]
-input = toTree(lst)
-input
+lst1 = [1, 3, 2, 5, None, None, None]
+input1 = toTree(lst1)
+lst2 = [2, 1, 3, None, 4, None, 7]
+input2 = toTree(lst2)
 # 출력
-output = 3
+output = [3, 4, 5, 5, 4, None, 7]
 
 # --------------------------------------------------
-def diameterOfBinaryTree(root):
-    longest = [0]
-    def dfs(node):
-        if not node:
-            return -1
+def mergeTrees(t1, t2):
+    if t1 and t2:
+        node = TreeNode(t1.val + t2.val)
+        node.left = mergeTrees(t1.left, t2.left)
+        node.right = mergeTrees(t1.right, t2.right)
         
-        left = dfs(node.left)
-        right = dfs(node.right)
-        
-        longest[0] = max(longest[0], left + right + 2)
-        
-        return max(left, right) + 1
-    
-    dfs(root)
-    return longest[0]
+        return node
+    else:
+        return t1 or t2
 
 
-print(diameterOfBinaryTree(input))
-print(diameterOfBinaryTree(input) == output)
+printTree(mergeTrees(input1, input2))

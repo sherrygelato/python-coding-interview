@@ -1,7 +1,8 @@
 """
-CH14. 43_Diameter of Binary Tree.py
+CH14. 48_Balanced_Binary_Tree.py
 """
 import collections
+from gc import collect
 import heapq
 import functools
 import itertools
@@ -15,7 +16,8 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-    
+
+
 def toTree(list):
     size = len(list)
     idx = 1
@@ -24,12 +26,11 @@ def toTree(list):
         return None
     
     def recursive(i):
-        if i > size or list[i-1] == None:
+        if i > size or list[i-1] is None:
             return None
         node = TreeNode(list[i-1])
-        node.left = recursive(2*i)
-        node.right = recursive(2*i+1)
-    
+        node.left = recursive(i*2)
+        node.right = recursive(i*2+1)
         return node
     return recursive(idx)
 
@@ -37,7 +38,7 @@ def toTree(list):
 def printTree(root):
     if root is None:
         print('Tree is Empty')
-    
+        
     q = collections.deque([root])
     
     while q:
@@ -51,30 +52,16 @@ def printTree(root):
         print()
 
 
-# 입력
-lst = [1,2,3,4,5,None,None]
-input = toTree(lst)
-input
-# 출력
-output = 3
+# 입력 1
+lst1 = [3, 9, 20, None, None, 15, 7]
+input1 = toTree(lst1)
+# 출력 1
+output1 = True
+
+# 입력 2
+lst2 = [1, 2, 2, 3, 3, None, None, 4, 4]
+input2 = toTree(lst2)
+# 출력 2
+output2 = False
 
 # --------------------------------------------------
-def diameterOfBinaryTree(root):
-    longest = [0]
-    def dfs(node):
-        if not node:
-            return -1
-        
-        left = dfs(node.left)
-        right = dfs(node.right)
-        
-        longest[0] = max(longest[0], left + right + 2)
-        
-        return max(left, right) + 1
-    
-    dfs(root)
-    return longest[0]
-
-
-print(diameterOfBinaryTree(input))
-print(diameterOfBinaryTree(input) == output)
