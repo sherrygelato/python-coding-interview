@@ -62,16 +62,16 @@ from typing import *
 | [O]  | [보석과 돌](https://leetcode.com/problems/jewels-and-stones/) | ★      | 11장. 해시 테이블             |
 | [O]  | [중복 문자 없는 가장 긴 부분 문자열](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | ★★     | 11장. 해시 테이블             |
 | [O]  | [상위 K 빈도 요소](https://leetcode.com/problems/top-k-frequent-elements/) | ★★     | 11장. 해시 테이블             |
-| [ ]  | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★     | 12장. 그래프                  |
-| [ ]  | [전화 번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | ★★     | 12장. 그래프                  |
-| [ ]  | [순열](https://leetcode.com/problems/permutations/)          | ★★     | 12장. 그래프                  |
-| [ ]  | [조합](https://leetcode.com/problems/combinations/)          | ★★     | 12장. 그래프                  |
-| [ ]  | [조합의 합](https://leetcode.com/problems/combination-sum/)  | ★★     | 12장. 그래프                  |
-| [ ]  | [부분 집합](https://leetcode.com/problems/subsets/)          | ★★     | 12장. 그래프                  |
-| [ ]  | [일정 재구성](https://leetcode.com/problems/reconstruct-itinerary/) | ★★     | 12장. 그래프                  |
-| [ ]  | [코스 스케줄](https://leetcode.com/problems/course-schedule/) | ★★     | 12장. 그래프                  |
-| [ ]  | [네트워크 딜레이 타임](https://leetcode.com/problems/network-delay-time/) | ★★     | 13장. 최단 경로 문제          |
-| [ ]  | [K 경유지 내 가장 저렴한 항공권](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | ★★     | 13장. 최단 경로 문제          |
+| [O]  | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★     | 12장. 그래프                  |
+| [O]  | [전화 번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | ★★     | 12장. 그래프                  |
+| [O]  | [순열](https://leetcode.com/problems/permutations/)          | ★★     | 12장. 그래프                  |
+| [O]  | [조합](https://leetcode.com/problems/combinations/)          | ★★     | 12장. 그래프                  |
+| [O]  | [조합의 합](https://leetcode.com/problems/combination-sum/)  | ★★     | 12장. 그래프                  |
+| [O]  | [부분 집합](https://leetcode.com/problems/subsets/)          | ★★     | 12장. 그래프                  |
+| [O]  | [일정 재구성](https://leetcode.com/problems/reconstruct-itinerary/) | ★★     | 12장. 그래프                  |
+| [O]  | [코스 스케줄](https://leetcode.com/problems/course-schedule/) | ★★     | 12장. 그래프                  |
+| [O]  | [네트워크 딜레이 타임](https://leetcode.com/problems/network-delay-time/) | ★★     | 13장. 최단 경로 문제          |
+| [O]  | [K 경유지 내 가장 저렴한 항공권](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | ★★     | 13장. 최단 경로 문제          |
 | [ ]  | [이진 트리의 최대 깊이](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ★      | 14장. 트리                    |
 | [ ]  | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★      | 14장. 트리                    |
 | [ ]  | [가장 긴 동일 값의 경로](https://leetcode.com/problems/longest-univalue-path/) | ★      | 14장. 트리                    |
