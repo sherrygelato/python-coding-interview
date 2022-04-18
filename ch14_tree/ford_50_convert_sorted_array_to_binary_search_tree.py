@@ -1,5 +1,5 @@
 """
-CH14. 48_Balanced_Binary_Tree.py
+CH14. 50_Convert_Sorted_Array_to_Binary_Search_Tree.py
 """
 import collections
 from gc import collect
@@ -52,16 +52,29 @@ def printTree(root):
         print()
 
 
-# 입력 1
-lst1 = [3, 9, 20, None, None, 15, 7]
-input1 = toTree(lst1)
-# 출력 1
-output1 = True
+# 입력 
+input = [-10, -3, 0, 5, 9]
+# 출력 
+output = [0, -3, 9, -10, None, 5]
 
-# 입력 2
-lst2 = [1, 2, 2, 3, 3, None, None, 4, 4]
-input2 = toTree(lst2)
+# 입력 2 
+input2 = [-10, -7, -3, 0, 5, 7, 9]
 # 출력 2
-output2 = False
+output2 = [0, -7, 7,-10, -3, 5, 9]
 
 # --------------------------------------------------
+def sortedArrayToBST(nums):
+    if not nums:
+        return None
+    
+    mid = len(nums) // 2
+    
+    node = TreeNode(nums[mid])
+    node.left = sortedArrayToBST(nums[:mid])
+    node.right = sortedArrayToBST(nums[mid + 1:])
+    
+    return node
+
+
+print(printTree(sortedArrayToBST(input)))
+print(printTree(sortedArrayToBST(input2)))

@@ -1,5 +1,5 @@
 """
-CH14. 48_Balanced_Binary_Tree.py
+CH14. 51_Binary_Search_Tree_to_Greater_Sum_Tree.py
 """
 import collections
 from gc import collect
@@ -52,38 +52,9 @@ def printTree(root):
         print()
 
 
-# 입력 1
-lst1 = [3, 9, 20, None, None, 15, 7]
-input1 = toTree(lst1)
-# 출력 1
-output1 = True
-
-# 입력 2
-lst2 = [1, 2, 2, 3, 3, None, None, 4, 4]
-input2 = toTree(lst2)
-# 출력 2
-output2 = False
-
-# --------------------------------------------------
-def isBalanced(root):
-    def check(root):
-        if not root:
-            return 0
-        
-        left = check(root.left)
-        right = check(root.right)
-        
-        if left == -1 or right == -1 or abs(left - right) > 1:
-            return -1
-        return max(left, right) + 1
-    
-    return check(root) != -1
-
-
-print(isBalanced(input1))
-print(isBalanced(input1) == output1)
-print(isBalanced(input2))
-print(isBalanced(input2) == output2)
-
+# 입력 
+input = [4, 1, 6, 0, 2, 5, 7, None, None, None, 3, None, None, None, 8]
+# 출력 
+output = [30, 36, 21, 36, 35, 26, 15, None, None, None, 33, None, None, None, 8]
 
 # --------------------------------------------------
