@@ -1,5 +1,5 @@
 """
-CH14. 51_Binary_Search_Tree_to_Greater_Sum_Tree.py
+CH14. 52_Range_Sum_of_BST.py
 """
 import collections
 import heapq
@@ -52,23 +52,23 @@ def printTree(root):
 
 
 # 입력 
-input = [4, 1, 6, 0, 2, 5, 7, None, None, None, 3, None, None, None, 8]
-input = toTree(input)
+root = [10, 5, 15, 3, 7, None, 18]
+L = 7
+R = 15
+input = toTree(root)
 # 출력 
-output = [30, 36, 21, 36, 35, 26, 15, None, None, None, 33, None, None, None, 8]
+output = 32
 
 # --------------------------------------------------
-class Solution:
-    val = 0
+def rangeSumBST(root, L, R):
+    if not root:
+        return 0
     
-    def bstToGst(self, root):
-        if root:
-            self.bstToGst(root.right)
-            self.val += root.val
-            root.val = self.val
-            self.bstToGst(root.left)
-        return root
-    
+    return (root.val if L <= root.val <= R else 0) + rangeSumBST(root.left, L, R) + rangeSumBST(root.right, L, R)
 
-a = Solution()
-print(printTree(a.bstToGst(input)))
+
+print(rangeSumBST(input, L, R))
+print(rangeSumBST(input, L, R) == output)
+
+
+# --------------------------------------------------
