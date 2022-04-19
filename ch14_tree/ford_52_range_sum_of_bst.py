@@ -72,3 +72,58 @@ print(rangeSumBST(input, L, R) == output)
 
 
 # --------------------------------------------------
+def rangeSumBST2(root, L, R):
+    def dfs(node):
+        if not node:
+            return 0
+        
+        if node.val < L:
+            return dfs(node.right)
+        elif R < node.val:
+            return dfs(node.left)
+        return node.val + dfs(node.left) + dfs(node.right)
+    
+    return dfs(root)
+
+
+print(rangeSumBST2(input, L, R))
+print(rangeSumBST2(input, L, R) == output)
+
+
+# --------------------------------------------------
+def rangeSumBST3(root, R, L):
+    stack, sum = [root], 0
+    
+    while stack:
+        node = stack.pop()
+        if node:
+            if  L < node.val:
+                stack.append(node.left)
+            if node.val < R:
+                stack.append(node.right)
+            if L <= node.val <= R:
+                sum += node.val
+    return sum
+
+print(rangeSumBST3(input, R, L))
+print(rangeSumBST3(input, R, L) == output)
+
+
+# --------------------------------------------------
+def rangeSumBST4(root, R, L):
+    stack, sum = [root], 0
+    
+    while stack:
+        node = stack.pop(0)
+        if node:
+            if L < node.val:
+                stack.append(node.left)
+            if node.val < R:
+                stack.append(node.right)
+            if L <= node.val <= R:
+                sum += node.val
+    return sum
+
+
+print(rangeSumBST4(input, R, L))
+print(rangeSumBST4(input, R, L) == output)
