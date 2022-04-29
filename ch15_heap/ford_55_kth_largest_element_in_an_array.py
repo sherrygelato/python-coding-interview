@@ -10,8 +10,6 @@ import sys
 import math
 import bisect
 
-from cv2 import FAST_FEATURE_DETECTOR_NONMAX_SUPPRESSION
-
 
 # 입력 1 
 input = [3,2,1,2,4,5,5,6]
