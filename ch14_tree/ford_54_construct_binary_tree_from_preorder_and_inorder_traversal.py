@@ -1,5 +1,5 @@
 """
-CH14. 51_Binary_Search_Tree_to_Greater_Sum_Tree.py
+CH14. 54_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.py
 """
 import collections
 import heapq
@@ -9,6 +9,7 @@ import re
 import sys
 import math
 import bisect
+
 
 class TreeNode:
     def __init__(self, val, left = None, right = None):
@@ -51,24 +52,31 @@ def printTree(root):
         print()
 
 
-# 입력 
-input = [4, 1, 6, 0, 2, 5, 7, None, None, None, 3, None, None, None, 8]
-input = toTree(input)
-# 출력 
-output = [30, 36, 21, 36, 35, 26, 15, None, None, None, 33, None, None, None, 8]
+# 입력 1 
+input11 = [3, 9, 20, 15, 7]
+input12 = [9, 3, 15, 20, 7]
+# 출력 1
+root1 = [3, 9, 20, None, None, 15, 7]
+input1 = toTree(root1)
+
+# 입력 2
+input21 = [1, 2, 4, 5, 3, 6, 7, 9, 8]
+input22 = [4, 2, 5, 1, 7, 9, 6, 8, 3]
+# 출력 2
+root2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+input2 = toTree(root2)
+
 
 # --------------------------------------------------
-class Solution:
-    val = 0
+def buildTree(preorder, inorder):
+    if inorder:
+        index = inorder.index(preorder.pop(0))
+        
+        node = TreeNode(inorder[index])
+        node.left = buildTree(preorder, inorder[0: index])
+        node.right = buildTree(preorder, inorder[index + 1:])
+        
+        return node
     
-    def bstToGst(self, root):
-        if root:
-            self.bstToGst(root.right)
-            self.val += root.val
-            root.val = self.val
-            self.bstToGst(root.left)
-        return root
-    
-
-a = Solution()
-print(printTree(a.bstToGst(input)))
+print(printTree(buildTree(input11, input12)))
+print(printTree(buildTree(input21, input22)))
