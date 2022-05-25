@@ -23,7 +23,6 @@ class Trie:
     def __init__(self):
         self.root = TrieNode()
 
-
     def insert(self, word):
         node = self.root
         for char in word:
@@ -37,15 +36,23 @@ class Trie:
             if char not in node.children:
                 return False
             node = node.children[char]
-            
         return node.word
-    
-    
+
+
     def startswith(self, prefix):
         node = self.root
         for char in prefix:
             if char not in node.children:
                 return False
             node = node.children[char]
-            
         return True
+
+
+# --------------------------------------------------
+trie = Trie()
+trie.insert('apple')
+trie.search('apple')
+trie.search('app')
+trie.startswith('app')
+trie.insert('app')
+trie.search('app')
